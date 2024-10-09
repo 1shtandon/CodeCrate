@@ -1,7 +1,7 @@
 
 # Hackathon Submission Site
 
-This is a hackathon submission site, created as a part of an internship assignment. The site allows learners to create, edit, and delete their hackathon submissions. The submissions are stored in the browser's local storage as a database and can be viewed by other learners who visit the site.
+This is a hackathon submission site. The site allows learners to create, edit, and delete their hackathon submissions. The submissions are stored in the browser's local storage as a database and can be viewed by other learners who visit the site.
 
 ## Features
 
