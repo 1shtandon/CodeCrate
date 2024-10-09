@@ -1,0 +1,282 @@
+.submission-header-container {
+    display: flex;
+    // justify-content: space-between;
+    background-color: #003145;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    padding: 5vh 3.5rem;
+    font-family: 'Poppins';
+    height: 30vh;
+
+    .submission-subcontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 7rem;
+        margin-right: 3rem;
+        width: 60%;
+
+
+        .submission-title-container {
+            max-height: 60%;
+            display: flex;
+            gap: 3rem;
+            margin-top: 0%;
+            box-sizing: border-box;
+
+            .submission-img {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 10%;
+                object-fit: cover;
+            }
+
+            .submission-title {
+                font-size: 2.6rem;
+                font-weight: 700;
+                line-height: 2.1rem;
+            }
+        }
+
+        .submission-desc {
+            box-sizing: border-box;
+            height: 20%;
+            padding: 0%;
+            margin: 0;
+            margin-top: 2%;
+            font-weight: 500;
+            font-size: large;
+            width: 80%;
+        }
+
+        .icon-container {
+            height: 20%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .vertical-line-icon {
+                width: 1px;
+                height: 1.7rem;
+                background-color: #968b8b;
+            }
+
+            .star-icon {
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+                height: 1.3rem;
+
+                border-right-width: 2px;
+                border-color: #F5F5F5;
+
+                &.star-icon-clicked {
+                    background-color: #d40c0c;
+                    border-color: #F5F5F5;
+                }
+            }
+
+            .calendar-icon {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 0.85rem;
+                background-color: #255973;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+                border-radius: 150px;
+            }
+        }
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        ;
+
+        >* {
+            margin-top: 1rem;
+        }
+
+        .icon-button {
+            display: flex;
+            align-items: center;
+            color: white;
+            background-color: #003145;
+            gap: 0.75rem;
+            border-width: 2px;
+            border-radius: 0.5rem;
+            border: 1px solid white;
+            padding-left: 1.7rem;
+            padding-right: 1rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+            font-size: large;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.submission-body-container {
+    display: flex;
+    padding: 5vh 3.5rem;
+    background-color: white;
+    font-family: 'Poppins';
+    height: 47vh;
+
+    .submission-summary-container {
+        margin-left: 7rem;
+        margin-right: 3rem;
+        width: 60%;
+
+        .submission-summary-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 2.1rem;
+        }
+
+        #summary-body {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            margin-top: 1rem;
+            justify-content: right;
+        }
+    }
+
+    .submission-info-container {
+        display: flex;
+        flex-direction: column;
+
+        >* {
+            margin-top: 1rem;
+        }
+
+        width: 35%;
+
+
+        .hackathon-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .date-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 5%;
+        }
+
+        #hackathon-date {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1rem;
+            margin-top: 0%;
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .icon-link {
+            border-width: 1px;
+            display: flex;
+            padding-top: 0.4rem;
+            padding-bottom: 0.6rem;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: medium;
+            color: #626668;
+            background-color: white;
+            width: 50%;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 0.7rem;
+            
+            @media (max-width: 1150px) {
+                font-size: 0;
+            }
+        }
+    }
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    left: 33%;
+    top: 30%;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    font-family: 'Poppins';
+
+    .modal-content {
+        width: 90%;
+
+        #modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 2.1rem;
+            margin-bottom: 1rem;
+        }
+
+        #modal-description {
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .modal-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        .modal-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+            font-size: large;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            border: 1px solid white;
+            width: 7rem;
+            height: 2.5rem;
+
+
+            &:nth-child(1) {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                border: 1px solid #003145;
+            }
+
+            &:nth-child(2) {
+                background-color: #d40c0c;
+                color: white;
+            }
+        }
+    }
+}
